@@ -1,0 +1,43 @@
+#include<stdio.h>
+
+/*Quando a¸c˜oes s˜ao vendidas ou compradas por meio de um corretor, a comiss˜ao do corretor ´e muitas vezes calculada usando uma escala que
+depende do valor das a¸c˜oes negociadas. Escreva um programa que calcule o valor da comiss˜ao a partir do valor da transa¸c˜ao informado pelo usu´ario,
+sabendo-se que o corretor cobra os valores indicados abaixo e que a comiss˜ao m´inima ´e de R$ 39,00:*/
+
+/*
+a) At´e R$ 2.500,00, comiss˜ao de R$30+1,7%
+b) R$2.500,01 at´e R$6.250,00, comiss˜ao de R$56 + 0,66%
+c) R$6.250,01 at´e R$20.000,00, comiss˜ao de R$76 + 0,34%
+d) R$20.000,01 at´e R$50.000,00, comiss˜ao de R$100 + 0,22%
+e) R$50.000,01 at´e R$500.000,00, comiss˜ao de R$155 + 0,11%
+f) Mais que R$ 500.000,00, comiss˜ao de R$255 + 0,09% */
+
+int main (){
+	
+	float valor, comissao;
+	
+	printf("Digige o valor da compra ou venda: ");
+	scanf("%f", &valor);
+	
+	if(valor <= 2500.00)
+		comissao = 30 + (valor*(1.7/100));
+	else if(valor <= 6250)
+		comissao = 56 + (valor*(0.66/100));
+	else if(valor <= 20000)
+		comissao = 76 + (valor*(0.34/100));
+	else if(valor <= 50000)
+		comissao = 100 + (valor*(0.22/100));
+	else if(valor <= 500000)
+		comissao = 155 * (valor*(0.11/100));
+	else
+		comissao = 255 * (valor*(0.09/100));
+		
+	
+	
+	if(comissao < 39)
+		comissao = 39;
+	printf("Valor da comissao: %f ", comissao);
+	
+	
+}
+	
