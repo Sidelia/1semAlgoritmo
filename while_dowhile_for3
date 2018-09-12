@@ -1,0 +1,17 @@
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+
+/* Faça um programa que le um numero n e que computa e imprima o i=1 domatório até n. OBS: não utilize formulas como a da soma do PA.*/
+
+int main(){
+	int n, somatorio;
+	scanf("%d", &n);
+	
+	for(;n>=1;n--)
+		somatorio+=n;
+		
+	printf("%d", somatorio);
+	
+	return 0;
+}
