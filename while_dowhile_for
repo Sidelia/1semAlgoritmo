@@ -1,0 +1,35 @@
+//Aula 5 - Estrutura de repetição
+
+/*Faça um programa que imprima um menu de 4 pratos na tela e uma quinta op¸c˜ao para sair do programa. O programa deve imprimir o prato solicitado. O programa deve terminar quando for escolhido a
+quinta opçao*/
+
+
+#include<stdio.h>
+#include<locale.h>
+#include<math.h>
+
+int main (){
+	int i;
+	
+	printf("[1] lasanha\n[2]pastel\n[3]ceviche\n[4]tacos\n[5]sair\n");
+	scanf("%d", &i);
+	
+	switch(i){
+		case(1):
+			printf("lasanha");
+			break;
+		case(2):
+			printf("pastel");
+			break;
+		case(3):
+			printf("ceviche");
+			break;
+		case(4):
+			printf("tacos");
+			break;
+		case(5):
+			printf("Fim do Menu");
+	}
+	
+	return 0;
+}
