@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<math.h>
+
+//laços encaixados números primos
+
+int main(){
+	
+	int divisor, candidato, primosImpressos, n, eprimo;
+	
+	printf("\n Digite um número inteiro e positivo:");
+	scanf("d%", &n);
+	if(n>0){
+		printf("%d,", 2);
+		candidato= 3;
+		primosImpressos=1;
+		while(primosImpressos <n){
+			divisor= 3;
+			eprimo= 1;
+			while((divisor <= candidato/2) && (eprimo)){
+				if(candidato % divisor==0)
+				eprimo=0;
+			divisor=divisor+2; //Demais divisores são impar
+			}
+			if(eprimo){
+				printf("%d,", candidato);
+				primosImpressos++;
+			}
+			candidato=candidato+2; //Testa próximo número candidato e primo
+		}
+	}
+}
