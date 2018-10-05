@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+	char ryu, ken;
+		
+	
+	printf("Digite um número\n");
+		scanf(%c, &n);
+	
+	while (ryu >=1, i++){
+		if (ryu == 0)
+		printf
+	}
+		
