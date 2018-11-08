@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+/*Hello Word 3.0 em 4 idiomas: português, ingles, frances e alemao*/
+int main()
+{
+    printf("\nHello Word\n");
+    printf("\nOla mundo\n");
+    printf("\nHallo Welt\n");
+    printf("\nBonjour le monde\n");
+}
