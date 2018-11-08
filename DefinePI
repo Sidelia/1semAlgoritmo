@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+#define PI 3.1415
+
+int main()
+{
+    float raio = 3;
+    printf("Area da Circunferencia = %f", PI*raio*raio);
+    raio=4;
+    printf("Agora, area da circunferencia = %f", PI*raio*raio);
+}
