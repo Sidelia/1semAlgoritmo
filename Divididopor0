@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+/*Faca um programa que exiba o resultado de 100 dividido por 0*/
+
+int main()
+{
+    printf("O resultado de cem dividido por zero e: %d", 100/0);
+    return 0;
+}
