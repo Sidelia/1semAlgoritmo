@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+#define PI 3.1415
+/* Suponha que a circunferencia A de raio 3 e uma circunferencia b de raio 4.
+Qual o resultado da soma das duas areas destas circunferencias?*/
+
+int main()
+{
+    float raioA = 3;
+    float raioB = 4;
+    float areaA = PI*raioA*raioA;
+    float areaB = PI*raioB*raioB;
+
+    printf("A area da circunferencia A e: %f\n", areaA);
+    printf("A area da circunferencia B e: %f\n", areaB);
+
+    printf("A soma das areas A e B e: %f\n", areaA+areaB);
+
+	return 0; 
+}
