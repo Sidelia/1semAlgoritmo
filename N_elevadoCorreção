@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main()
+
+{
+  int noventa_e_nove_ao_quadrado = 99*99;
+	printf("99 elevado a 2 = %d", noventa_e_nove_ao_quadrado);
+	
+	return 0;
+   }
