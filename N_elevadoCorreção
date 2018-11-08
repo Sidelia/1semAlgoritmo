@@ -1,10 +1,26 @@
 #include <stdio.h>
 #include <math.h>
 
+/* Faça um programa que exiba o resultado de 99 ao quadrado*/
+
 int main()
 
 {
-  int noventa_e_nove_ao_quadrado = 99*99;
+   /* double numero, potencia;
+
+    pow (numero, potencia);
+
+    printf("Digite um numero:\n");
+        scanf("%d", &numero);
+
+    printf("Digite a potencia:\n");
+        scanf("%d", &potencia);
+
+    printf("O resultado e: %d", pow);
+*/ comentado
+
+	//Correção
+	int noventa_e_nove_ao_quadrado = 99*99;
 	printf("99 elevado a 2 = %d", noventa_e_nove_ao_quadrado);
 	
 	return 0;
