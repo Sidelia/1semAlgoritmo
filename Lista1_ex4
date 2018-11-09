@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+
+
+int main()
+{
+int x;
+   int y;
+
+   printf("Digite um numero para x: %i\n");
+    scanf("%i", &x);
+
+   printf("Digite um numero para y: %i\n");
+    scanf("%i", &y);
+
+   x = y;
+   y = x;
+
+   printf("O valor de x e: %d\n", x);
+   printf("O valor de y e: %d\n", y);
+
+
+}
