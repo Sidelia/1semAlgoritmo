@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+
+int main()
+{
+    double A, B, soma, MEDIA;
+
+    scanf("%lf", &A);
+    scanf("%lf", &B);
+
+    soma = (A*3.5 + B*7.5);
+
+    MEDIA = soma/11;
+
+    printf("MEDIA = %.5lf\n", MEDIA);
+
+
+    return 0;
+}
