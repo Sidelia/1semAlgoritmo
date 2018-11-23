@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	double raio=0, esfera=(4/3.0), pi=3.14159, VOLUME;
+	
+	scanf("%lf", &raio);
+
+	raio = pow(raio, 3);	
+	
+	VOLUME = esfera*pi*raio;
+	
+	printf("VOLUME = %.3lf\n", VOLUME);
+	
+	
+	return 0;
+}
