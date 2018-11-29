@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int div, n, eprimo;
+	
+	printf("Digite um numero:");
+	scanf("%d", &n);
+	
+	div = 2;
+	eprimo = 1;
+	
+	while (div<=n-1){
+		if(n%div == 0)
+		eprimo = 0;
+	div++;	
+	}
+	if(eprimo)
+		printf("\nE primo!!\n");
+	else
+		printf("Nao e primo!");
+	
+
+}
