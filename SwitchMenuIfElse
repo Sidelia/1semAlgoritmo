@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	
+	int a;
+	
+	printf("Digite o RA:");
+	scanf("%d", &a);
+	
+	switch(a) {
+	case 10129:
+		printf("MAria Candida Moreira Telles\n");
+		break;
+		
+	case 33860:
+		printf("Larissa Garcia Alfonsi\n");
+		break;
+		
+	default:
+		printf("O aluno nao esta matriculado\n");
+		}
+}
