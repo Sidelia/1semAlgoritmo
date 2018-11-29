@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main() {
+	char op;
+	double l, l1, l2, r;
+	
+	printf("Digite uma opção (q, r, ou c):");
+	scanf("%c", &op);
+	
+	if(op == 'q'){
+		printf("Digite o tamanho do quadrado:");
+		scanf("%lf", &l);
+		printf("A area e: %.2\n", l*l);
+}
+	else{
+	
+	if(op == 'r'){
+		printf("Digite o tamanho do retangulo:");
+		scanf("%lf", &l1);
+		printf("Digite o tamanho do outro lado do retangulo:\n");
+		scanf("%d", &l2);
+		printf("A area e: %.2lf\n", l1*12);		
+	}	
+	else{
+		if(op == 'c'){
+			printf("Digite o tamanho do raio:");
+			scanf("%lf", &r);
+			printf("A area e: %2\n", 3.1415*r*r);
+	}
+		else {		
+	if(op != 'q' && op != 'r' && op != 'c'){
+		printf("Opcao invalida!");
+}
+}
+}
+}
+}
