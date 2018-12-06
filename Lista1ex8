@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+/*8. Faça um programa que lê um caracter ’F’ ou ’C’, que indica se o próximo número a ser
+digitado corresponde a temperatura em Fahrenheit ou Celsius. Em seguida o programa
+deve ler o valor da temperatura e então imprimir o valor correspondente da temperatura
+na outra unidade de medida. Obs.: (C = 5/9 · (F - 32)).*/
+
+
+ float f;
+ float C;
+ void celsius(void); // funcao
+
+ main(void){ // usando o printf dentro da main e em seguida o chamado da funcao
+     printf("Digite a temperatura em Graus Fahrenheit:  ");
+      scanf("%f",&f);// float pq poderá ser valores picados
+      celsius();
+     system("pause>>0");
+ }
+     void celsius (void){ // funcao que ira calcular e fazer a conversao de temperaturas
+         C = ((f-32)/9)*5; // logica que fara a conversao
+          printf("A temperatura convertida em Celsius e de:2.%f",C);
+     }
