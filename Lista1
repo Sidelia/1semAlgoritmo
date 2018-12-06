@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <math.h>
+/*5. Faça um programa que leia os valores correspondentes aos três lados a, b e c de um triângulo. O programa então determina se o triângulo é isósceles, escaleno ou equilátero,
+informando isto para o usuário, e em seguida imprime a área A do triângulo utilizando a fórmula de Heron:*/
+
+int main()
+{
+   double a, b, c;
+
+   printf("Informe a lado 'a':\n");
+    scanf("%lf", &a);
+
+   printf("Informe a lado 'b':\n");
+    scanf("%lf", &b);
+
+   printf("Informe a lado 'c':\n");
+    scanf("%lf", &c);
+
+  if(a==b && b==c && c==a){
+    printf("Triangulo Equilatero!\n");
+  }
+  else if (a!=b && b!=a && a!=c && c!=b){
+    printf("Triangulo Escaleno!\n");
+  }
+  else {
+    printf("Tiangulo Isosceles!\n");
+  }
+
+
+}
